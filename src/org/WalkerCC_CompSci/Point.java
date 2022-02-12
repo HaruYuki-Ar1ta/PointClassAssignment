@@ -5,27 +5,29 @@ public class Point {
     private double y = 0;
 
     public Point(double x, double y){
-
+        this.x = x;
+        this.y = y;
     }
 
     public double getX() {
-        return 0;
+        return x;
     }
 
     public double getY() {
-        return 0;
+        return y;
     }
 
     public void FlipVertical() {
-
+      x = -1 * x;
     }
 
     public void FlipHorizontal() {
-
+      y = -1 * y;
     }
 
     public void Translate(double xChange, double yChange){
-
+        x = x + xChange;
+        y = y + yChange;
 
     }
 }
